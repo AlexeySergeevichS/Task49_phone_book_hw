@@ -21,7 +21,7 @@
 from csv import DictReader, DictWriter
 
 from os.path import exists
-
+ 
 class LenNumberError(Exception):
     def __init__(self, txt):
         self.txt = txt
@@ -143,7 +143,7 @@ def main():
     else:
         file_name = file_name + '.csv'
     while True:
-        command = input('Введите команду(список команд - ? ): ')
+        command = input('Введите команду (список команд - ? ): ')
         if command == 'q':
             break
         elif command == 'w':
